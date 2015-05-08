@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "0.10"
+install:
+  - npm install phantomjs -g
+  - npm install -g karma-cli
+  - npm install -g gulp
+  - npm install -g bower
+  - npm install
+  - bower install
+before_script:
+  - gulp vendor:publish --test
+  - gulp build:complete --test
+  - sleep 10 # give gulp background task some time to execute.
+script:
+  - karma start --single-run --browsers PhantomJS

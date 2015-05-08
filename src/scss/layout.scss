@@ -1,0 +1,23 @@
+.content-wrapper {
+  max-width: $siteWidth;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.feed-controls {
+  position: relative;
+  .tag-mode-switch {
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }
+}
+
+.detail {
+  position: relative;
+  .btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
