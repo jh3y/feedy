@@ -1,0 +1,21 @@
+doctype
+html
+  include ../mixins/githubStats
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title feedy
+    meta(name="description", content="feedy")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='css/feedy.min.css')
+  body(ng-app = "feedy")
+    include header
+    .content-wrapper
+      block content
+    footer.tx--center.padd
+      +githubStats('jh3y', 'feedy')
+      .g-plusone(data-hreg="http://jh3y.github.io/feedy")
+    script(src="https://apis.google.com/js/platform.js", async, defer).
+      {lang: 'en-GB'}
+    script(src="js/vendor.min.js")
+    script(src="js/feedy.js")

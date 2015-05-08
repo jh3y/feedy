@@ -1,0 +1,15 @@
+src/js/tmp/
+
+node_modules/
+
+out/
+
+dist/
+
+.publish/
+
+src/vendor/
+
+testEnv/
+
+readable/

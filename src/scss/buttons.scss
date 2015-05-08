@@ -1,0 +1,7 @@
+.btn {
+  padding: 10px;
+  display: inline-block;
+  &:hover {
+    background-color: $feedyWhite;
+  }
+}
