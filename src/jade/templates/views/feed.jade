@@ -1,7 +1,0 @@
-div(ng-controller = "FeedCtrl")
-  .feed-controls
-    input.tx--black(ng-model="tag", type="text", placeholder="Enter tags to narrow search (comma separated)", title="Input search tags.")
-    div.tag-mode-switch.bd--grey(ng-click="switchTagMode()", ng-class="{'is--any': tagMode == 'any'}", title="Select tag mode.")
-      .tag-mode-switch--indicator
-  .feed-wrapper(ng-class="{'is--loading': loading, 'is--updating': updating}")
-      div(data-feed, data-feed-opts = "feedOpts", data-feed-data="feedData")
